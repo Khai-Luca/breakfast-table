@@ -1,0 +1,204 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ } /*remove margens e espaçamentos padrões de todos os elementos e impede que o padding afete o width total*/
+ 
+ 
+ .menu a {
+  font-family:'Confortaa', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+} 
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin: 38px;
+    margin-right: 100px;
+}
+
+#header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#linha-azul {
+  height: 6px;
+  width: 100%;
+  background-color: #3ec3f2; 
+  margin: 0;
+  padding: 8px;
+
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    margin-left: 40px;
+    transform:scale(0.8);
+}
+
+.image-logo {
+  margin: 0px;
+  padding:0;
+  width: 57px;
+  height: 57px;
+  margin-top:20px; 
+  display:block;
+}
+
+.text-logo{
+    padding: 0px;
+    margin:0px;
+    margin-top: 33px;
+    font-size: 32px;
+    height: 40px;
+}
+
+.hero{
+    position: relative;
+    background-image: url(./images/38cd33bd3f190b0ed265b5b4623c3842.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    height: 350px;
+    overflow: hidden; 
+}
+
+.overlay::before{
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 1;
+}
+
+.hero p{
+    position: relative;
+    z-index: 2;
+    font-family:'Confortaa', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    
+}
+
+ body {
+    font-family:'Confortaa', sans-serif;
+    overflow-x: hidden;
+}
+
+.receitas-container h1{
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+   
+}
+
+.receitas-container{
+    display: flex;
+    flex-direction:column;
+    margin: 0 auto;  
+    max-width: 1200px; 
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+    justify-content: center; 
+    margin-bottom: 150px;   
+}
+
+.receita{
+    background: #F5F2F2;
+    border-radius: 20px;
+    width: 330px;
+    height: 380px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.receita img{
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    display: block; /*ocupa 100% da largura*/
+    overflow: hidden;
+}
+
+.receita h2{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: start;
+    margin-left: 28px;
+    margin-top: 30px;
+}
+
+.receita p{
+    text-align: start;
+    font-size: 18px;
+    margin: 28px;
+    margin-top: 14px;
+}
+
+.receita button{
+    background-color: #42BFDD;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 32px;
+    font-size: 17px;
+    height: 35px;
+    width: 128px;
+    border-radius: 18px;
+    
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #42BFDD;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 25px;
+    
+}
+
+#sobre-nos{
+    margin: 150px;
+    margin-top: 80px;
+}
+
+#sobre-nos h1{
+    margin-bottom: 50px;
+}
+
+#sobre-nos p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 22px;
+}

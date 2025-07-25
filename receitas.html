@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas de Café-da-manhã</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+      <div id="linha-azul"></div>
+   <div id="header">
+      <div class="logo">
+        <img class="image-logo" src="./images/breakfast.png" alt="Logo">
+        <p class="text-logo">Breakfast Table</p>
+      </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+   </div> 
+  </header>
+
+  <main>
+    <section class="hero">
+      <!--inserir bg img por css-->
+      <div class="overlay"></div>
+      <p>A primeira refeição do dia como ela deve ser:<br> gostosa e descomplicada.</p>
+    </section>
+
+    <div class="receitas-container">
+      <h1>Receitas</h1>
+      <div id="cards">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logo">
+        <img class="image-logo" src="./images/breakfast.png" alt="Logo">
+        <p class="text-logo">Breakfast Table</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    renderRecipes();
+  </script>
+</body>
+</html>
