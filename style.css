@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- } /*remove margens e espaçamentos padrões de todos os elementos e impede que o padding afete o width total*/
+ }
  
  
  .menu a {
-  font-family:'Confortaa', sans-serif;
+  font-family:'Comfortaa', sans-serif;
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
@@ -87,7 +87,7 @@
 .hero p{
     position: relative;
     z-index: 2;
-    font-family:'Confortaa', sans-serif;
+    font-family:'Comfortaa', sans-serif;
     font-size: 30px;
     font-weight: 600;
     color: white;
@@ -97,7 +97,7 @@
 }
 
  body {
-    font-family:'Confortaa', sans-serif;
+    font-family:'Comfortaa', sans-serif;
     overflow-x: hidden;
 }
 
@@ -148,7 +148,7 @@
 
 .receita h2{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
     text-align: start;
     margin-left: 28px;
     margin-top: 30px;
@@ -156,12 +156,14 @@
 
 .receita p{
     text-align: start;
-    font-size: 18px;
+    font-size: 17px;
     margin: 28px;
     margin-top: 14px;
 }
 
-.receita button{
+.receita a{
+    text-decoration: none;
+    color: black;
     background-color: #42BFDD;
     border: 0;
     display: flex;
@@ -202,3 +204,20 @@ footer{
     line-height: 1.6;
     font-size: 22px;
 }
+
+.btn-receita:hover{
+    background-color: rgba(244,211,94,255);
+    color: white;
+    transition: 0.2s all;
+}
+
+.menu a:hover{
+    color: rgba(244,211,94,255);
+    transition: 0.3s all;
+}
+
+footer p{
+  margin-top: 40px;
+  font-size: 13px;
+}
+

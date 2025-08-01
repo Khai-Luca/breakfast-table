@@ -1,0 +1,302 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ } /*remove margens e espaçamentos padrões de todos os elementos e impede que o padding afete o width total*/
+ 
+ 
+ .menu a {
+  font-family:'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+} 
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin: 38px;
+    margin-right: 100px;
+}
+
+#header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#linha-azul {
+  height: 6px;
+  width: 100%;
+  background-color: #3ec3f2; 
+  margin: 0;
+  padding: 8px;
+
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    margin-left: 40px;
+    transform:scale(0.8);
+}
+
+.image-logo {
+  margin: 0px;
+  padding:0;
+  width: 57px;
+  height: 57px;
+  margin-top:20px; 
+  display:block;
+}
+
+.text-logo{
+    padding: 0px;
+    margin:0px;
+    margin-top: 33px;
+    font-size: 32px;
+    height: 40px;
+}
+
+.hero{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    height: 350px;
+    overflow: hidden; 
+}
+
+.overlay::before{
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 1;
+}
+
+.hero h1{
+    position: relative;
+    z-index: 2;
+    font-family:'Comfortaa', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 140px;
+    
+}
+
+.page-bolo-de-cenoura .hero {
+  background-image: url('../images/135505514-bolo-de-cenoura-molhad.jpg');
+  background-size: cover;
+}
+
+.page-cha-gelado .hero{
+  background-image: url('../images/cha-gelado_73312.jpg');
+  background-size: cover;
+}
+
+.page-crepioca .hero{
+  background-image: url('../images/crepioca.jpg');
+  background-size: cover;
+}
+
+.page-croissant .hero{
+  background-image:  url('../images/croissant.jpeg');
+  background-size: cover;
+}
+
+.page-dadinhos-de-tapioca .hero{
+  background-image:  url('../images/4c5b9948564c2e2c53716f88ed9eedda.jpg');
+  background-size: cover;
+}
+
+.page-muffins-de-chocolate .hero{
+  background-image:  url('../images/vegan-chocolate-muffins-11.jpg');
+  background-size: cover;
+}
+
+.page-omelete .hero{
+  background-image:  url('../images/Ham-and-Spinach-Omelet-3.jpg');
+  background-size: cover;
+}
+
+.page-ovos-mexidos .hero{
+  background-image:  url('../images/scrambled-eggs-e1488327364180.jpg');
+  background-size: cover;
+}
+
+.page-panquecas-americanas .hero{
+  background-image:  url('../images/fluffyamericanpancak_74828_16x9.jpg');
+  background-size: cover;
+}
+
+.page-pao-de-queijo .hero{
+  background-image:  url('../images/622052-pao-de-queijo-assado-forn.jpg');
+  background-size: cover;
+}
+
+.page-smoothie-de-morango .hero{
+  background-image:  url('../images/bigstock-Glass-Of-Fresh-Strawber.jpg');
+  background-size: cover;
+}
+
+.page-suco-detox-verde .hero{
+  background-image:  url('../images/suco-verde-1.jpg');
+  background-size: cover;
+}
+
+.page-avocado-toast .hero{
+  background-image:  url('../images/suco-verde-1.jpg');
+  background-size: cover;
+}
+
+.page-waffles .hero{
+  background-image:  url('../images/Waffle-Simples-e-crocante-1024x1.jpg');
+  background-size: cover;
+}
+
+#info-extra{
+  height: 60px;
+  width: 100%;
+  background-color: #3ec3f2; 
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+}
+
+.timer-icon {
+  padding:0;
+  width: 28px;
+  height: 28px; 
+  
+}
+
+.tempo p{
+  font-size: 17px;
+  margin: 10px;
+  margin-top: 16px;
+}
+
+.dificuldade {
+  display: flex;
+  align-items: center;
+}
+
+.level-icon {
+  
+  padding:0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.dificuldade p{
+  font-size: 16px;
+  margin: 4px;
+  margin-top: 13px;
+
+}
+
+.rendimento{
+  display: flex;
+  align-items: center;
+}
+
+.platter-icon {
+  padding:0;
+  width: 35px;
+  height: 35px;
+  margin-top: 4px; 
+}
+
+.rendimento p{
+  font-size: 16px;
+  margin: 12px;
+  margin-top: 20px;
+}
+
+ body {
+    font-family:'Comfortaa', sans-serif;
+    overflow-x: hidden;
+ }
+
+ ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 115px;
+  line-height: 25px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 115px;
+  line-height: 25px;
+}
+
+ol li:not(:last-child),
+ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-align: start;
+    margin: 70px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: start;
+    margin: 30px;
+    margin-left: 100px;
+}
+
+main {
+  margin-bottom: 100px; 
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #42BFDD;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 25px;
+    
+}
+
+footer p{
+  margin-top: 40px;
+  font-size: 13px;
+}
+
